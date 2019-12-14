@@ -12,11 +12,17 @@ agesData = [10, 13, 14, 12, 11, 10, 11, 10, 15]
 # Mean-Average
 # Median-Midpoint
 # Mode-Most frequent value
-# Variance of Standard Deviation
-# Standard Deviation
+# Variance of Standard Deviation-Variance of the squared differences from the mean
+#----How varied is our data
+# Standard Deviation-Square root of the variance
 
 print(statistics.mean(agesData))
 print(statistics.mode(agesData))
 print(statistics.median(agesData))
 print(sorted(agesData))
+
+print(statistics.variance(agesData))
+print(statistics.stdev(agesData))
+#proving standard deviation above ^
+print(math.sqrt(statistics.variance(agesData)))
 
